@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.screen-first {
-=======
 /*---------------------FIRST-SCREEN--------------------*/
 /*---------------------FIRST-SCREEN--------------------*/
 /*---------------------FIRST-SCREEN--------------------*/
@@ -9,38 +6,24 @@
 /*Задаем параметры первого экрана и его текста*/ 
 .screen-first {
   position: relative;
->>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
-  background-image: url(' /images/first-screen-background.png');
+  background-image: url('../images/first-screen-background.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   background-position: center center;
   &__text {
     text-transform: uppercase;
-<<<<<<< HEAD
-    color: #ffffff;
-  }
-=======
     color: $white;
     margin-top: 170px;
     margin-bottom: 340px;
   }
 /*Параметры текста первого заголовка первого экрана*/ 
->>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
   h1 {
     font-weight: 700;
     font-size: 64px;
     line-height: 95px;
     letter-spacing: 0.15em;
     margin-bottom: 35px;
-<<<<<<< HEAD
-  }
-  .container-center {
-    min-height: 100vh;
-  }
-}
-
-=======
     margin-top: 80px;
   }
 
@@ -52,14 +35,11 @@
 }
 
 /*Параметры текста второго заголовка второго экрана*/ 
->>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 .signature {
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-<<<<<<< HEAD
-=======
 }
 
 /*---------------------MIDDLE-BLOCK--------------------*/
@@ -294,5 +274,4 @@
       width: 100%;
     }
   }
->>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 }
