@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+/*Позиционирование чердака*/ 
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 .header {
 
   &-wrapper {
@@ -5,7 +9,11 @@
     justify-content: space-between;
     align-items: center;
   }
+<<<<<<< HEAD
   position: fixed;
+=======
+  position: absolute;
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
   top: 0;
   left: 0;
   right: 0;
@@ -13,6 +21,10 @@
   padding: 20px 0;
 }
 
+<<<<<<< HEAD
+=======
+/*Иконка навигации (Гамбургер)*/ 
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 .humburger {
 
   cursor: pointer;
@@ -94,6 +106,10 @@
     }
   }*/
 
+<<<<<<< HEAD
+=======
+  /*Клик по иконке навигации (Гамбургер)*/
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
   &.active {
     .humburger__line {
       &:nth-child(2) {
@@ -107,7 +123,11 @@
       }
     }
   }
+<<<<<<< HEAD
 }
 
 
   /**/
+=======
+}
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd

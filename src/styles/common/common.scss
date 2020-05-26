@@ -1,7 +1,15 @@
+<<<<<<< HEAD
+=======
+/*Задаем шрифты странице*/ 
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 .body {
   font-family: 'Oswald', sans-serif;
 }
 
+<<<<<<< HEAD
+=======
+/*Задаем параметры контейнеров (ширина, высота, отступы, позиционирование flex'ов)*/ 
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 .container {
   margin: 0 auto;
   max-width: 1024px;
@@ -16,11 +24,19 @@
   }
 }
 
+<<<<<<< HEAD
 .text {
 
   &-center {
     text-align: center;
   }
 
+=======
+/*Задаем центровку текста*/ 
+.text {
+  &-center {
+    text-align: center;
+  }
+>>>>>>> e9e88bc22919f6b8feb0bc79822ea4ccfcfb6cbd
 }
 
