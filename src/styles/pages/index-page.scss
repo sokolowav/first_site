@@ -1,0 +1,28 @@
+.screen-first {
+  background-image: url(' /images/first-screen-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center center;
+  &__text {
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: 0.15em;
+    margin-bottom: 35px;
+  }
+  .container-center {
+    min-height: 100vh;
+  }
+}
+
+.signature {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
