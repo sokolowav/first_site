@@ -52,7 +52,7 @@
   position: absolute;
   z-index: 2;
   transform: translate(-50%, 50%);
-  background-color: $lightgray;
+  background-color: $lightgrey;
   display: flex;
   justify-content: center;
   bottom: 0px;
@@ -88,7 +88,7 @@
     font-size: 18px;
     line-height: 27px;
     text-align: center;
-    color: $gray;
+    color: $grey;
     padding-bottom: 57px;
   }
 }
@@ -133,7 +133,7 @@
 /*Задаем параметры элементов карточек проектов*/ 
 .item {
   &__description {
-    color: $gray;
+    color: $grey;
     font-weight: normal;
     font-size: 16px;
     line-height: 22px;
@@ -224,6 +224,7 @@
 /*---------------------THIRD-SCREEN--------------------*/
 /*---------------------THIRD-SCREEN--------------------*/
 
+/*Задаем параметры третьего экрана*/ 
 .screen-third {
   &-container{
     padding: 130px 0px 150px;
@@ -245,7 +246,7 @@
       &-item {
       display: flex;
       flex-direction: column;
-      background-color: $lightgray;
+      background-color: $lightgrey;
       align-items: center;
       justify-content: center;
       height: 230px;
@@ -265,13 +266,180 @@
     }
   }
 }
+
+/*---------------------FOURTH-SCREEN--------------------*/
+/*---------------------FOURTH-SCREEN--------------------*/
+/*---------------------FOURTH-SCREEN--------------------*/
+/*---------------------FOURTH-SCREEN--------------------*/
+
+
+/*Задаем параметры четвертого экрана*/ 
 .portfolio {
+  padding-bottom: 150px;
   &-img-wrapper {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 50% 50%;
     img {
       width: 100%;
+    }
+  }
+}
+
+/*---------------------PARTNER-BLOCK--------------------*/
+/*---------------------PARTNER-BLOCK--------------------*/
+/*---------------------PARTNER-BLOCK--------------------*/
+/*---------------------PARTNER-BLOCK--------------------*/
+
+/*Задаем параметры ленты партнеров*/
+.partners-block {
+  background-color: $darkgrey;
+  &-text {
+    text-align: center;
+    padding-top: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  &-items {
+    display: flex;
+    padding: 60px 100px 100px 100px;
+    justify-content: space-between;
+    }
+}
+
+/*---------------------SIXTH-SCREEN--------------------*/
+/*---------------------SIXTH-SCREEN--------------------*/
+/*---------------------SIXTH-SCREEN--------------------*/
+/*---------------------SIXTH-SCREEN--------------------*/
+
+.screen-sixth {
+  &-container {
+    padding: 150px 0;
+  }
+  &-text {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+  }
+  &-items {
+    display: flex;
+    padding-top: 64px;
+    justify-items: space-between;
+    &-element {
+      margin-right: 30px;
+      &:last-child { margin-right: 0px;}
+      &-quote {
+        background-color: $lightgrey;
+        position: relative;
+        span {
+          padding-left: 30px;
+          position: absolute;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 96px;
+          line-height: 142px;
+          text-transform: uppercase;
+          color: $maroon;
+        }
+        p {
+          padding: 79px 30px 38px 30px;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+          color: $grey;
+        }
+      }
+      &-author {
+        padding-top: 30px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 31px;
+        letter-spacing: 0.02em;
+        span {
+          color: $maroon;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
+/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
+/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
+/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
+
+.call-to-action-text__second-string2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/*---------------------SEVENTH-SCREEN--------------------*/
+/*---------------------SEVENTH-SCREEN--------------------*/
+/*---------------------SEVENTH-SCREEN--------------------*/
+/*---------------------SEVENTH-SCREEN--------------------*/
+
+.screen-seven {
+  &-container {
+    padding: 100px 0 150px;
+  }
+  &-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &-items {
+    display: flex;
+    padding-top: 60px;
+    justify-content: flex-start;
+    &-element {
+      padding-right: 90px;
+      img {
+        width: 40px;
+        height: 40px;
+        margin:auto;
+      }
+      &_title {
+        padding: 15px 0 25px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: $grey;
+        text-transform: uppercase;
+      }
+      &_value {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      &:last-child {
+        padding-right: 0px;
+        .screen-seven-items-element_value {
+          color: $maroon;
+        }
+      }
     }
   }
 }
