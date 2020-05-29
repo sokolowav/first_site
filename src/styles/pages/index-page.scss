@@ -195,6 +195,12 @@
       line-height: 36px;
       letter-spacing: 0.02em;
       text-transform: uppercase;
+      
+      //модификация
+      &--text-left {
+        letter-spacing: 0.06em;
+        text-align: left;
+      }
     }
   }
   &-button {
@@ -243,7 +249,16 @@
     grid-template-columns: 33% 33% 33%;
     row-gap: 15px;
     column-gap: 20px;
-      &-item {
+    @media screen and (max-width: 750px) {
+      grid-template-columns: 50% 50%;   
+    }
+    @media screen and (max-width: 400px) {
+      grid-template-columns: 100%;   
+    }
+    
+    
+
+    &-item {
       display: flex;
       flex-direction: column;
       background-color: $lightgrey;
@@ -275,7 +290,6 @@
 
 /*Задаем параметры четвертого экрана*/ 
 .portfolio {
-  padding-bottom: 150px;
   &-img-wrapper {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -286,6 +300,83 @@
   }
 }
 
+/*---------------------FIFTH-SCREEN---------------------*/
+/*---------------------FIFTH-SCREEN---------------------*/
+/*---------------------FIFTH-SCREEN---------------------*/
+/*---------------------FIFTH-SCREEN---------------------*/
+
+.fifth-screen {
+
+}
+
+.section {
+  padding: 150px 0;
+  &__header {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 53px;
+    margin-bottom: 65px;
+    text-transform: uppercase;
+  }
+}
+
+.accordion {
+
+  &-item {
+    margin-bottom: 40px;
+    &__header {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      text-transform: uppercase;
+      color: $maroon;
+      padding-left: 40px;
+      position: relative;
+      cursor: pointer;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        display: block;
+        transform: translateY(-50%) rotate(45deg);
+        border-top: 5px solid $maroon;
+        border-right: 5px solid $maroon;
+        border-bottom: 5px solid transparent;
+        border-left: 5px solid transparent;
+      }
+    }
+
+    &__content {
+      display: none;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      color: $grey;
+    }
+
+    &.active {
+      .accordion-item__content {
+        display: block;
+      }
+
+      .accordion-item__header {
+        margin-bottom: 30px;
+
+        &:before {
+          transform: translateY(calc(-50% + 3px)) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+}
+
 /*---------------------PARTNER-BLOCK--------------------*/
 /*---------------------PARTNER-BLOCK--------------------*/
 /*---------------------PARTNER-BLOCK--------------------*/
@@ -294,19 +385,20 @@
 /*Задаем параметры ленты партнеров*/
 .partners-block {
   background-color: $darkgrey;
+  padding: 100px 0;
+
   &-text {
     text-align: center;
-    padding-top: 100px;
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
     line-height: 53px;
+    margin-bottom: 30px;
     text-transform: uppercase;
     color: $white;
   }
   &-items {
     display: flex;
-    padding: 60px 100px 100px 100px;
     justify-content: space-between;
     }
 }
@@ -326,11 +418,11 @@
     font-weight: 700;
     font-size: 36px;
     line-height: 53px;
+    margin-bottom: 65px;
     text-transform: uppercase;
   }
   &-items {
     display: flex;
-    padding-top: 64px;
     justify-items: space-between;
     &-element {
       margin-right: 30px;
@@ -372,21 +464,6 @@
   }
 }
 
-/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
-/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
-/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
-/*---------------------SECOND-CALL-TO-ACTION-BLOCK---------------------*/
-
-.call-to-action-text__second-string2 {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-align: left;
-}
-
 /*---------------------SEVENTH-SCREEN--------------------*/
 /*---------------------SEVENTH-SCREEN--------------------*/
 /*---------------------SEVENTH-SCREEN--------------------*/
@@ -407,9 +484,9 @@
   &-items {
     display: flex;
     padding-top: 60px;
-    justify-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
     &-element {
-      padding-right: 90px;
       img {
         width: 40px;
         height: 40px;
@@ -435,7 +512,7 @@
       }
 
       &:last-child {
-        padding-right: 0px;
+        margin-right: 0px;
         .screen-seven-items-element_value {
           color: $maroon;
         }
