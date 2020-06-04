@@ -120,6 +120,7 @@
 .menu {
   display: none;
   &__item {
+    font-size: 18px;
     padding: 10px 20px;
     color: $white;
     cursor: pointer;
@@ -155,6 +156,20 @@
   }
 
   &--mobile {
+    background-color: $maroon;
+    margin-top: 30px;
+   .menu {
+      &__item {
+        display: flex;
+        justify-content: center;
+        &:first-child {
+          padding-top: 30px;
+        }
+        &:last-child {
+          padding-bottom: 30px;
+        }        
+      }
+    }
     @media screen and (min-width: $sw-m){
       display: none;
     }

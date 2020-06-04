@@ -259,7 +259,7 @@
   }
 
 /*Параметры заголовка второго экрана*/ 
-  h2 {
+  .screen-second_header {
     color: #404149;
     font-weight: 700;
     font-size: 36px;
@@ -561,22 +561,22 @@
 /*Задаем параметры третьего экрана*/ 
 .screen-third {
   &-container{
-    padding-top: 130px;
+    padding-top: 150px;
     padding-bottom: 150px;
     @media screen and (max-width: $sw-l) {
-      padding-top: 90px;
+      padding-top: 100px;
       padding-bottom: 130px;
     }
     @media screen and (max-width: $sw-m) {
-      padding-top: 65px;
+      padding-top: 75px;
       padding-bottom: 100px;
     }
     @media screen and (max-width: $sw-s) {
-      padding-top: 50px;
+      padding-top: 60px;
       padding-bottom: 85px;
     }
     @media screen and (max-width: $sw-xs) {
-      padding-top: 40px;
+      padding-top: 45px;
       padding-bottom: 65px;   
     }
   }
@@ -601,23 +601,23 @@
     }
   }
   .activities {
-    padding-top: 36px;
+    padding-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 15px;
     column-gap: 20px;
     @media screen and (max-width: $sw-l) {
-      padding-top: 25px;
+      padding-top: 40px;
     }
     @media screen and (max-width: $sw-m) {
-      padding-top: 20px;
+      padding-top: 35px;
       grid-template-columns: 1fr 1fr;
     }
     @media screen and (max-width: $sw-s) {
-      padding-top: 15px;
+      padding-top: 30px;
     }
     @media screen and (max-width: $sw-xs) {
-      padding-top: 10px;
+      padding-top: 25px;
       grid-template-columns: 1fr;
     }
     
