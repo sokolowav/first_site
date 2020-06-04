@@ -2,12 +2,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* Клик по бургеру */
   const burger = document.querySelector('.humburger')
+  const menu = [...document.querySelectorAll('.menu')]
   burger.addEventListener('click', e => {
     const isActive = e.currentTarget.classList.value.indexOf('active') === -1 ? false : true
     if (!isActive) {
       burger.classList.add('active')
+      menu.map(el => {
+        el.classList.add('active')
+      })
     } else {
       burger.classList.remove('active')
+      menu.map(el => {
+        el.classList.remove('active')
+      })
     }
   })
   
