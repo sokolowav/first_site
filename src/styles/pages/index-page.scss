@@ -10,7 +10,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: $darkgrey;
-  min-height: 100vh;
   background-position: center center;
   &__text {
     text-transform: uppercase;
@@ -60,14 +59,6 @@
       font-size: 28px;
       line-height: 38px;
     }
-
-  }
-
-  .container-center {
-    min-height: 100vh;
-    @media screen and (max-width: $sw-s) {
-      min-height: unset;
-    }    
   }
 }
 
@@ -243,7 +234,6 @@
 
 /*Общие параметры второго экрана (отступы, минимальная высота)*/ 
 .screen-second {
-  min-height: 100vh;
   padding: 240px 0px 150px;
   @media screen and (max-width: $sw-l) {
     padding: 200px 0px 110px;
@@ -341,12 +331,10 @@
     @media screen and (max-width: $sw-s) {
       font-size: 14px;
       line-height: 18px;
-      // margin-bottom: 40px;
     }
     @media screen and (max-width: $sw-xs) {
       font-size: 13.5px;     
       line-height: 17px;
-      // margin-bottom: 35px;
     }
   }
   &__img {
@@ -660,8 +648,10 @@
         }
         use {
           transition: .3s;
+          @media screen and (max-width: $sw-m) {
+            fill: $maroon;
+          }
         }
-        
       }
       &__text {
         font-style: normal;
@@ -699,6 +689,9 @@
         use {
           fill: $maroon;
         }
+        @media screen and (max-width: $sw-m) {
+          color: #000000;
+        }
       }
     }
   }
@@ -714,11 +707,25 @@
 .portfolio {
   &-img-wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    // grid-template-columns: repeat(4, 1fr);
-    // grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
     img {
       width: 100%;
+      transition: 0.3s;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    @media screen and (max-width: 1699px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 1fr; 
+    }
+    @media screen and (max-width: 974px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, 1fr);
+    }
+    @media screen and (max-width: 656px) {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
   }
 }
@@ -923,7 +930,6 @@
   }
   &-items {
     display: flex;
-    // justify-content: space-between;
     @media screen and (max-width: 1175px) {
       align-items: center;
       justify-content: space-evenly;
@@ -1165,6 +1171,13 @@
     &-element {
       display: flex;
       flex-direction: column;
+      filter: grayscale(100);
+      &:hover {
+        filter: grayscale(0);
+      }
+      @media screen and (max-width: $sw-m) {
+        filter: unset;
+      }
       svg, img {
         width: 40px;
         height: 40px;
